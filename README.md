@@ -1,16 +1,12 @@
-# fluttest
+# Flutter Architecture Components sample
+===================================
 
-A new Flutter project.
+A scale-ready sample Flutter app based on Android [Architecture Components](https://developer.android.com/arch). However, saying Android Architecture Components is cumbersome. Fluttest = Flutter Architecture Components.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+| Android Library | Flutter Parallel |
+| --- | --- |
+| [Room](https://developer.android.com/topic/libraries/architecture/room) | [Moor](https://github.com/simolus3/moor) |
+| [Retrofit](https://developer.android.com/topic/libraries/architecture/lifecycle) | [Chopper](https://github.com/lejard-h/chopper) |
+| [Dagger](https://github.com/google/dagger) | [Provider](https://github.com/rrousselGit/provider) |
+| [ViewModels](https://developer.android.com/topic/libraries/architecture/viewmodel) | ["Simple" BLoC Pattern](https://github.com/brianegan/flutter_architecture_samples/tree/master/simple_blocs/) |
+| [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) | [Streams](https://dart.dev/tutorials/language/streams/) |
