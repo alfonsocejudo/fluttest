@@ -4,10 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttest/components/router.dart';
+import 'package:fluttest/di/global_providers.dart';
 import 'package:fluttest/ui/home/home.dart';
 import 'package:provider/provider.dart';
-
-import 'di/global_providers.dart';
 
 void main() => runApp(MyApp());
 

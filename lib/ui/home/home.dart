@@ -16,8 +16,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final _usernameController = new TextEditingController();
-
   HomeBloc _homeBloc;
 
   @override
@@ -26,13 +24,6 @@ class _HomeState extends State<Home> {
     _homeBloc.getCachedUser();
 
     super.didChangeDependencies();
-  }
-
-  @override
-  void dispose() {
-    _usernameController.dispose();
-
-    super.dispose();
   }
 
   @override
@@ -67,7 +58,6 @@ class _HomeState extends State<Home> {
                     height: 50.0,
                   ),
                   TextField(
-                    controller: _usernameController,
                     onChanged: _homeBloc.changeTextField,
                   ),
                   StreamBuilder(
@@ -83,8 +73,7 @@ class _HomeState extends State<Home> {
                         onPressed: isEmpty(snapshot.data)
                             ? null
                             : () {
-                                _homeBloc
-                                    .submitUserLogin(_usernameController.text);
+                                _homeBloc.submitUserLogin(snapshot.data);
                               },
                       );
                     },
